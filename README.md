@@ -4,8 +4,8 @@ StatusBarOverlayMonoTouch
 Port of the MTStatusBarOverlay (https://github.com/myell0w/MTStatusBarOverlay) for monontouch.
 
 Just add :
-				StatusBarOverlay.StatusBarOverlay overlay = StatusBarOverlay.StatusBarOverlay.SharedInstance;
 
+				StatusBarOverlay.StatusBarOverlay overlay = StatusBarOverlay.StatusBarOverlay.SharedInstance;
 				overlay.Animation = StatusBarOverlayAnimation.Shrink;  // MTStatusBarOverlayAnimationShrink
 				overlay.DetailViewMode = DetailViewMode.History;         // enable automatic history-tracking and show in detail-view
 				overlay.Progress = 0.0;
