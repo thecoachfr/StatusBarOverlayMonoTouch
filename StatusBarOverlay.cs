@@ -850,7 +850,7 @@ namespace StatusBarOverlay
             LastPostedMessage = message;
         }
 
-        [Action("Hide:")]
+        [Action("hide:")]
         public void Hide()
         {
             ActivityIndicator.StopAnimating();
@@ -1389,9 +1389,9 @@ namespace StatusBarOverlay
             // if a duration is specified, hide after given duration
             if (duration <= TimeSpan.FromSeconds(0)) return;
             // hide after duration
-            PerformSelector(new Selector("hide:"), null, duration.TotalMilliseconds);
+            PerformSelector(new Selector("hide:"), null, duration.TotalSeconds);
             // clear history after duration
-            PerformSelector(new Selector("clearHistory:"), null, duration.TotalMilliseconds);
+            PerformSelector(new Selector("clearHistory:"), null, duration.TotalSeconds);
         }
 
         public void CallDelegateWithNewMessage(String newMessage)
